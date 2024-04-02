@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>webSite</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="./css/slick.css" />
+<title>Primeiro Projeto</title>
+
+<meta charset="UTF-8">
+
+
+<title>Galeria de fotos</title>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<style>
+    
+    @media screen and (min-width: 768px) {
+
+    .navigation {
+
+        transition: transform 0.5s; /* Transição suave */
+    }
+
+    /* Classe para ocultar o menu quando a página é rolada para baixo */
+    .hide-on-scroll {
+        transform: translateY(-90%); /* Move o menu para cima para ocultá-lo */
+    }
+
+    /* Classe para mostrar o menu quando a página é rolada para cima */
+    .show-on-scroll {
+        transform: translateY(50); /* Move o menu de volta para a posição original */
+    }
+}
+</style>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo">F<span>oo</span>D P<span>ee</span>K</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">INICIO</a></li>
+                <li class="nav-item"><a href="burg1.html">BURG</a></li>
+                <li class="nav-item"><a href="kad.html">K.A.D</a></li>
+                <li class="nav-item"><a href="bigburg.html">BIG BURG</a></li>
+                <li class="nav-item"><a href="contatos.html">CONTATOS</a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="home-text">
+                <h4 class="text-h4">Welcome FooD PeeK</h4>
+                <h1 class="text-h1">Different spice for different tastes</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni quisquam</p>
+                <a href="#" class="home-btn">Order yours</a>
+            </div>
+            <div class="home-img">
+                <img src="img/image1.png" alt="hamburguer">
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+    <div class="col-100">
+            
+        <div class="full-img" id="fullimgBox">
+            <img src="./img/img1.png" id="fullimg">
+            <span id="closeBtn">X</span>
+        </div>
+          
+          <div class="titulodamarca">
+            <h2> <br>  </h2> </div>
+        <div class="img-gallery">
+            <img src="./img/img2.jpg" onclick="openFullimg(this.src)" >
+            <img src="./img/img1.jpg" onclick="openFullimg(this.src)">
+            <img src="./img/img4.jpg" onclick="openFullimg(this.src)">
+            <img src="./img/img3.jpg" onclick="openFullimg(this.src)">
+            <img src="./img/img5.jpg" onclick="openFullimg(this.src)">
+            <img src="./img/img6.jpg" onclick="openFullimg(this.src)">
+        </div>
+    
+        <div class="full-img" id="fullimgBox">
+            <img src="" id="fullimg">
+            <span id="closeBtn">X</span>
+        </div>
+        
+    
+        <footer>
+            <div class="col-100 footer">
+                <div class="content">
+                    <div class="col-4">
+                        <h3><b>Informações Adicionais.</b></h3>
+                        <p> Realizamos entregas em todo país, consulte um representante Burg ou entre em contato para mais informações.</p>
+                        <p class="clock">08:00-17:00 (11)986706115 <p>
+                                <p>Você também pode realizar compras na nossa fábrica localizada em São Paulo, exclusivamente mediante agendamento prévio.</p>
+                                <p class="clock">Manhã: 08:00-12:00 Tarde: 13:00-16:00<p>
+                    </div>
+                    <div class="col-4">
+                        <h3><b>Missão</b></h3>
+                        <p>Entregar o melhor produto em relação ao preço do mercado de moda masculina para que o lojista passa revender o produto em menor tempo possíve, gerando rentabilidade sustentável para toda a cadeia têxtil.</p>
+                    </div>
+                    <div class="col-4">
+                        <h3><b>Burg Company</b></h3>
+                        <p>
+                            Fazemos as melhores peças masculinas no mercado 100% nacional.
+                            Somos comprometidos com qualidade,conforto e estilo único.
+                        </p>
+                    </div>
+    
+                    <div class="col-4">
+                        <h3><b>Valores</b></h3>
+                        <p>
+                        </p>
+    
+                        <p class="local">São Paulo, SP<p>
+                                <p class="emailico">comercial@burg.com.br<p>
+                                        <p class="telefonico">+55 11 98670-6115<p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="col-100 footer-2">
+            <div class="content">
+    
+                <p>
+                    Burg Company - Qualidade, Conforto e Estilo. Todos os direitos reservados ©️ 2024
+            </div>
+                </div>
+            </div>
+        </footer>
+        <div class="col-100 footer-2">
+            <div class="content">
+    
+                <p>
+                    Essa é a parte de baixo do texto
+                </p>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/jquery.js"></script>
+        <script type="text/javascript" src="./js/jquery-migrate.js"></script>
+        <script type="text/javascript" src="./js/slick.min.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+    
+       
+
+    </body>
+    
+    </html>

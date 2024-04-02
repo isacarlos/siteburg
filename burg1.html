@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>webSite</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="./css/slick.css" />
+<title>Primeiro Projeto</title>
+
+<meta charset="UTF-8">
+
+
+<title>Galeria de fotos</title>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<style>
+    
+    @media screen and (min-width: 768px) {
+
+    .navigation {
+
+        transition: transform 0.5s; /* Transição suave */
+    }
+
+    /* Classe para ocultar o menu quando a página é rolada para baixo */
+    .hide-on-scroll {
+        transform: translateY(-90%); /* Move o menu para cima para ocultá-lo */
+    }
+
+    /* Classe para mostrar o menu quando a página é rolada para cima */
+    .show-on-scroll {
+        transform: translateY(50); /* Move o menu de volta para a posição original */
+    }
+}
+</style>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo">F<span>oo</span>D P<span>ee</span>K</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">INICIO</a></li>
+                <li class="nav-item"><a href="burg1.html">BURG</a></li>
+                <li class="nav-item"><a href="kad.html">K.A.D</a></li>
+                <li class="nav-item"><a href="bigburg.html">BIG BURG</a></li>
+                <li class="nav-item"><a href="contatos.html">CONTATOS</a></li>
+                <i class='bx bx-search'></i>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="home-text">
+                <h4 class="text-h4">BURG</h4>
+                <h1 class="text-h1"> Estilo atemporal além de tendências.</h1>
+                <p>QUALIDADE, CONFORTO E ESTILO</p>
+                <a href="#" class="home-btn">Todos Modelos</a>
+            </div>
+            <div class="home-img">
+                <img src="img/image.png" alt="hamburguer">
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+    <div class="col-100">
+            
+        <div class="full-img" id="fullimgBox">
+            <img src="./img/img1.png" id="fullimg">
+            <span id="closeBtn">X</span>
+        </div>
+          
+          <div class="titulodamarca">
+            <h2> <br>  </h2> </div>
+        <div class="img-gallery">
+            <img src="./img/img2.jpg" onclick="openFullimg(this.src)" >
+            <img src="./img/img1.jpg" onclick="openFullimg(this.src)">
+            <img src="./img/img4.jpg" onclick="openFullimg(this.src)">
+            <img src="./img/img3.jpg" onclick="openFullimg(this.src)">
+            <img src="./img/img5.jpg" onclick="openFullimg(this.src)">
+            <img src="./img/img6.jpg" onclick="openFullimg(this.src)">
+        </div>
+    
+        <div class="full-img" id="fullimgBox">
+            <img src="" id="fullimg">
+            <span id="closeBtn">X</span>
+        </div>
+        
+        <div class="col-100 footer-2">
+            <div class="content">
+    
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/jquery.js"></script>
+        <script type="text/javascript" src="./js/jquery-migrate.js"></script>
+        <script type="text/javascript" src="./js/slick.min.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+    
+        <script>
+            // JavaScript para controlar a visibilidade do menu ao rolar a página
+            window.addEventListener('scroll', function() {
+                var navigation = document.querySelector('.navigation');
+                if (window.scrollY > 0) {
+                    // Se a página estiver rolada para baixo, adicione a classe para ocultar o menu
+                    navigation.classList.add('hide-on-scroll');
+                    navigation.classList.remove('show-on-scroll');
+                } else {
+                    // Se a página estiver no topo, remova a classe para mostrar o menu
+                    navigation.classList.remove('hide-on-scroll');
+                    navigation.classList.add('show-on-scroll');
+                }
+            });
+        </script>
+
+    </body>
+    
+    </html>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.me/5511986706115?text=Olá%20Burg%20Company!%20Preciso%20de%20mais%20informações" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+<i style="margin-top:16px" class="fa fa-whatsapp"></i>
+</a>
+
+<body>
+    <main>
+        
+    </main>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Burg Company</h1>
+                <p>Qualidade, Conforto e Estilo.
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Contatos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">comercial@burg.com.br</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">+55 11 98670-6115</a>
+                </li>
+               
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Marcas</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">BURG</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">K.A.D</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">BIG BURG</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Missão</h3>
+
+                <p>
+                    Somos comprometidos em entregar o melhor produto em relação ao preço do mercado para que o lojista passa revender o produto em menor tempo possível, gerando rentabilidade sustentável para toda a cadeia têxtil.
+
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024 Burg Company - Todos os direitos reservados
+        </div>
+    </footer> 
+    <link rel="stylesheet" href="assets/css/stylerodape.css">
+    <link rel="stylesheet" href="assets/css/stylerodape.scss">
+</body>
+
+</html>

@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+.text-h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --red:#d63a25;
+    --white:#fff;
+    --dark:#090135;
+}
+body{
+    color: var(--dark);
+    background: var(--dark);
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #051bdf;
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+
+        position: fixed; /* Fixa o menu na tela */
+        top: 0; /* Alinha o menu no topo */
+        width: 100%; /* Define a largura do menu como 100% da largura da tela */
+        z-index: 1000; /* Define uma alta camada de sobreposição para garantir que o menu esteja sempre acima de outros elementos */
+    
+
+        
+    
+}
+.navigation .logo{
+    color: var(--red);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.logo span{
+    color: var(--red);
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navigation ul li a{
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.navigation ul li a:hover{
+    color: var(--red);
+}
+.navigation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--red);
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+.home-text{
+    max-width: 37rem;
+}
+.home-text .text-h4{
+    font-size: 1.5rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+.home-text .text-h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+.home-text p{
+    margin-bottom: 4rem;
+}
+.home-btn{
+    padding: 15px 45px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.home-btn:hover{
+    background: #fc4c35;
+}
+.home-img img{
+    width: 100%;
+    margin-top: 100px;
+}
+
+   
+body {
+    background: rgb(255, 255, 255);
+}
+
+.img-gallery {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-gallery img {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.img-gallery img:hover {
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68,77,136, 0.2);
+}
+
+.full-img {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.full-img img {
+    width: auto;
+    max-width: 500px;
+    max-height: 90%;
+    margin: auto; /* Centraliza a imagem horizontalmente */
+    display: block; /* Remove espaços verticais extras */
+    top: 50%; /* Move a imagem para o meio verticalmente */
+    transform: translateY(15%); /* Ajusta a posição vertical da imagem */
+
+}
+
+.full-img span {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 30px;
+    color: rgb(248, 14, 14);
+    cursor: pointer;
+}
+    
+
+.full-img-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.full-img-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.full-img-container.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-img img {
+    max-height: 90%;
+    margin: auto; /* Centraliza a imagem horizontalmente */
+    display: block; /* Remove espaços verticais extras */
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: rgb(92, 0, 0);
+    font-size: 24px;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(163, 11, 11);
+    font-size: 36px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.nav-btn.left {
+    left: 20px;
+}
+
+.nav-btn.right {
+    right: 20px;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-button {
+    position: absolute;
+    top: px; /* Ajuste a posição vertical (do topo) */
+    left: 105px; /* Ajuste a posição horizontal (da esquerda) */
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    z-index: 1; /* Garante que o botão esteja acima da imagem */
+}
+
+.titulodamarca {
+    text-align: center;
+}
+
+.home2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: auto;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.home2 .home-text {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 5%;
+    padding-left: 5%; /* Espaço entre imagem e texto */
+}
+
+.home2 .home-img {
+    flex: auto;
+    max-width: 50%;
+}
+
+.home2 .home-text .text-h4 {
+    font-size: 1.5rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.home2 .home-text .text-h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+
+.home2 .home-text p {
+    margin-bottom: 4rem;
+}
+
+.home2 .home-btn {
+    padding: 15px 45px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.home2 .home-btn:hover {
+    background: #fc4c35;
+}
+
+.home2 .home-img img {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: -10px;
+}
+
+
+.home3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row; /* Alterado para linha para garantir a ordem horizontal */
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.home3 .home-text {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 5%;
+    padding-left: 5%; /* Espaço entre imagem e texto */
+}
+
+.home3 .home-img {
+    flex: 1; /* Alterado para 1 para ocupar a mesma largura */
+    max-width: 50%;
+    order: 2; /* Altera a ordem para que a imagem venha após o texto */
+}
+
+.home3 .home-text .text-h4 {
+    font-size: 1.5rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.home3 .home-text .text-h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+
+.home3 .home-text p {
+    margin-bottom: 4rem;
+}
+
+.home3 .home-btn {
+    padding: 15px 45px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.home3 .home-btn:hover {
+    background: #fc4c35;
+}
+
+.home3 .home-img img {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: -10px;
+}
+
+
+.col-100 {
+    width: 100%;
+    float: left;
+    position: relative
+    
+}
+
+
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/anterior.png);
+    top: 50%;
+    left: 5%;
+}
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/proximo.png);
+    top: 50%;
+    right: 5%;
+}
+.slick-list {
+    width: 100%!important;
+}
+.slick-initialized {
+    overflow: hidden;
+}
+.slick-dots li button {
+    font-size: 0px;
+    border: 5px solid #03197c;
+    width: 22px;
+    height: 22px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.slick-dots {
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+}
+
+li.slick-active button {
+    background: #ff020256;
+}
+
+.slick-dots li {
+    padding-left: 5px;
+    display: inline-block;
+}
+
+.texto-destaque {
+    text-align: center;
+}
+
+
+.overlay-button {
+    position: absolute;
+    top: 610px; /* Ajuste a posição vertical (do topo) */
+    left: 105px; /* Ajuste a posição horizontal (da esquerda) */
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    z-index: 1; /* Garante que o botão esteja acima da imagem */
+}
+
+
+
+
+@media (max-width:785px) {
+
+    
+
+    .slick-dots {
+        display: none;}
+
+    .navigation{
+
+        padding: 18px 20px;
+
+        
+        }
+
+    
+         /*menu*/
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    /*home*/
+
+.home {
+    padding: 300px 2% 100px; /* Aumentei o padding-top para 300px */
+    flex-direction: column;
+    text-align: center;
+    gap: 5rem;
+}
+
+.home .text-h4 {
+    font-size: 15px;
+}
+
+.home .text-h1 {
+    font-size: 5rem;
+    line-height: 3rem;
+}
+
+.home p {
+    font-size: 20px;
+}
+
+.home-img {
+    display: block; /* Garante que seja um elemento de bloco */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    width: 120%; /* Garante que ocupe a largura total do contêiner */
+    max-width: none; /* Remove a limitação de largura máxima */
+}
+    
+ 
+         .home2 {
+  
+            display: flex;
+            flex-wrap:wrap-reverse;
+            text-align:center;
+        }
+
+        .home2 .text-h4{
+            font-size: 15px;
+            text-align:left;
+        }
+        .home2 .text-h1{
+            font-size: 3rem;
+            line-height: 3rem;
+            text-align:left;
+        }
+        .home2 p{
+            font-size: 15px;
+            text-align:left;
+        }
+
+        .home2 p{
+            font-size: 15px;
+            text-align:left;
+        }
+       
+
+        }
+         .home2 .home-img img {
+            width: 100%;
+            flex-direction:column }
+            
+        
+        
+        .home2 .home-text {
+            max-width: 100%; /* Faça com que o texto ocupe a largura total */
+            margin: 20px 0; /* Adicione um espaçamento ao redor do texto */
+            
+        }
+

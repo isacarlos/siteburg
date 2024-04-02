@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <title>webSite</title>
+
+    <style>
+        /* Estilo para a primeira seção */
+        .home3 {
+            background-color: rgb(255, 255, 255); /* Cor de fundo  */ 
+        }
+
+        .home2 {
+            background-color: #ffffff; /* Cor de fundo da primeira e  terceira seção */
+        }
+
+        .home-img img {
+            width: 355px;
+            height: 300%;
+        }
+
+        .slider-principal {
+    position: relative;
+    top: 20%; /* Posição inicial acima da tela */
+    transition: top 1s ease; /* Animação de transição da posição */
+}
+
+/* Media query para telas menores que 785px (dispositivos móveis) */
+@media (max-width: 785px) {
+    .slider-principal {
+        top: 60px; /* Ajuste a altura para dispositivos móveis */
+    }
+}
+
+       
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="index.html" class="logo"><span></span> <span> BURG COMPANY</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">INICIO</a></li> 
+                <li class="nav-item"><a href="burg1.html">BURG</a></li>
+                <li class="nav-item"><a href="kad.html">K.A.D</a></li>
+                <li class="nav-item"><a href="bigburg.html">BIG BURG</a></li>
+                <li class="nav-item"><a href="contatos.html">CONTATOS</a></li>
+                <i class='bx bx-search'></i>
+            </ul>
+
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="slider-principal">
+            <img src="img/1.png" alt="hamburguer" >
+            <img src="img/2.png" alt="hamburguer" >
+            <img src="img/3.png" alt="hamburguer" >
+        </div>
+
+    </main>
+   
+
+
+   
+    <main>
+        <section class="home2">
+            <div class="home-img">
+                <img src="img/img1.jpg" alt="hamburguer">
+                
+            </div>
+            <div class="home-text">
+                <h4 class="text-h4">BURG </h4>
+                <p>A linha BURG oferece modelos de roupas feitas com 100% algodão e elastano, apresentando estampas únicas para o uso diário.
+                    Priorizamos o conforto, o ajuste perfeito e um estilo original</p>
+
+                    <h4 class="text-h4"></h4>
+
+                <a href="burg.html" class="home-btn">Confira > </a>
+            </div>
+            
+
+            <!-- Este é um bloco de comentário-->
+
+            
+        </section>
+    </main>
+
+        <main>
+            <section class="home3">
+                <div class="home-img">
+                    <img src="img/kad3.jpg" alt="hamburguer">
+                    
+                </div>
+                <div class="home-text">
+                    <h4 class="text-h4">K.A.D </h4>
+                    <p>A KAD possui DNA urbano onde a composição de tecidos e modelos proporcionam um look para ser usado naqueles momentos de trabalho e descontração sempre bem alinhado com uma vida agitada e jovem.</p>
+    
+                    <a href="kad3.jpg" class="home-btn">Confira > </a>
+                </div>
+    
+        </main>
+
+        <main>
+            <section class="home2">
+                <div class="home-img">
+                    <img src="img/bigburg4.jpg" alt="hamburguer">
+                    
+                </div>
+                <div class="home-text">
+                    <h4 class="text-h4">BIG BURG </h4>
+                    <p>A linha BIG BURG oferece uma ampla seleção de modelos em tamanhos PLUS SIZE, com tecidos e acabamentos que conferem à peça um visual moderno e jovial, mantendo o conforto e alta durabilidade que você merece.
+
+                    </p>
+    
+                    <a href="burg.html" class="home-btn">Confira > </a>
+                </div>
+                
+    
+                <!-- Este é um bloco de comentário-->
+    
+                
+            </section>
+        </main>
+
+        
+
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    
+    <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    var sliderPrincipal = document.querySelector('.slider-principal');
+    sliderPrincipal.classList.add('active');
+});
+
+        $(document).ready(function(){
+            $('.slider-principal').slick({
+                arrows: true, // exibir setas de navegação
+                dots: true, // desativar pontos de navegação
+                infinite: true, // permitir navegação infinita
+                speed: 300, // velocidade do slide em milissegundos
+                slidesToShow: 1, // número de slides a exibir
+                slidesToScroll: 1 // número de slides a rolar
+            });
+        });
+    </script>
+</body>
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.me/5511986706115?text=Olá%20Burg%20Company!%20Preciso%20de%20mais%20informações" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+<i style="margin-top:16px" class="fa fa-whatsapp"></i>
+</a>
+
+<body>
+    <main>
+        
+    </main>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Burg Company</h1>
+                <p>Qualidade, Conforto e Estilo.
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Contatos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">comercial@burg.com.br</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/5511986706115?text=Olá%20Burg%20Company!%20Preciso%20de%20mais%20informações" class="footer-link">+55 11 98670-6115</a>
+                </li>
+               
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Marcas</h3>
+                </li>
+                <li>
+                    <a href="burg1.html" class="footer-link">BURG</a>
+                </li>
+                <li>
+                    <a href="kad.html" class="footer-link">K.A.D</a>
+                </li>
+                <li>
+                    <a href="bigburg.html" class="footer-link">BIG BURG</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Missão</h3>
+
+                <p>
+                    Somos comprometidos em entregar o melhor produto em relação ao preço do mercado para que o lojista passa revender o produto em menor tempo possível, gerando rentabilidade sustentável para toda a cadeia têxtil.
+
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024 Burg Company - Todos os direitos reservados
+        </div>
+    </footer> 
+    <link rel="stylesheet" href="assets/css/stylerodape.css">
+    <link rel="stylesheet" href="assets/css/stylerodape.scss">
+</body>
+
+</html>
